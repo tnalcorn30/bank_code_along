@@ -1,8 +1,30 @@
 .banner {
-    padding-top: 20px;
     height: 150px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: gray;
+    padding-top: 52px;
+}
+
+.clear-padding {
+    padding: 0;
+}
+
+.balance {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 30px;
+}
+
+.form-container {
+    padding: 15px;
+}
+
+.transaction-card {
+    margin-right: 20px;
+}
+
+.transaction-button {
+    float: right;
+    max-width: 180px;
+    min-width: 120px;
+    margin-right: 20px;
 }
