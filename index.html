@@ -33,14 +33,17 @@
     <div class="row">
       <div class="col text-center">
         <h1 class="balance">Balance</h1>
+        <p id="account-balance">$ 0.00</p>
       </div>
       <div class="col form-container">
-        <form class="card transaction-card">
+        <form class="card transaction-card" id="transaction-form">
           <div class="card-header text-center">Submit Transaction</div>
           <div class="card-body">
             <div class="mb-3">
-              <label for="amount" class="form-label">Amount: </label>
-              <input type="number" class="form-control" id="amount" name="amount">
+                <label for="amount" class="form-label">Amount: </label>
+                <div id="amount-input">
+                <p>$</p><input type="number" step=".01" class="form-control" id="amount" name="amount">
+                </div>
             </div>
             <div class="mb-3">
               <label for="transaction-type" class="form-label">Type</label>
@@ -49,11 +52,7 @@
                 <option value="2">Withdraw</option>
               </select>
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary transaction-button">Submit</button>
+            <button id="transaction-button" type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>
